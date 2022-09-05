@@ -1,0 +1,121 @@
+<!-- Atributos 
+
+
+    Propriedade
+    colspan = juntar colunas
+
+    rowspan = juntar linhas
+
+    Obs: Tem que ter o mesmo número de coluna e linha
+
+    Propriedade
+    Border-collapse
+
+    separeta(Padrão)
+
+    collapse(Juntar)
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>pagina de exemplo de estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="João Victor">
+        <meta name="description" content="Descrição bacana">
+        
+    
+        <style>
+            p{
+                text-align: center;
+            }
+            table{
+                border-collapse: collapse;
+                text-align: center;
+                border: solid 1px black;
+                width: 80%;
+                margin-left: 10%;
+                font-size: 20px;
+            }
+
+            table th{
+                border: solid 1px red;
+                padding: 20px;
+                background-color: #BFC361;
+            }
+            table td{
+                border: solid 1px black;
+                padding: 20px;
+            }
+            table tr{
+                margin: 0%;
+            }
+            
+
+        </style>
+
+
+
+    </head>
+    <body>
+    
+        <p>Tabela de preços de cursos</p>
+
+        <table>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>            
+            <tr>
+                <td rowspan="3">Designer</td>
+                <td>InDesign</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Photoshop</td>
+                <td>R$ 1.000,00</td>
+
+            </tr>
+            <tr>
+                <td>Illustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Valores sujeitos a alterações sem prévio aviso</td>
+            </tr>
+        
+        </table>
+
+    </body>
+
+</html>
